@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
+
+<head>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Data Lovers</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet"/>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+	<div class="contenedor">
+		<header>
+			<div class="logo">
+			  <img src="Assets/pokemon go.png">
+			</div>
+			 
+			
+			<form class="form" id="formulario">
+				<input type="text" class="barra-busqueda" id="busqueda" placeholder="buscar">
+			</form>
+
+
+			 
+			 <div class="dropdown"id="filter">
+				<button class="All" id="All" onclick="showPokemons(data.pokemon)">Show All</button>
+				<button class="aparicion" id="aparicion">Orden de Aparición</button>
+				<button class="poder" id="poder">Poder</button>
+			   <select id="tipo">
+			<option value=""> Tipo </option>
+            <option value="bug" > bug </option>
+            <option value="dark"> dark </option>
+            <option value="dragon"> dragon </option>
+			<option value="electric"> electric </option>
+			<option value="fairy"> fairy </option>
+            <option value="fighting"> fighting </option>
+            <option value="fire"> fire </option>
+			<option value="flying"> flying</option>
+			<option value="ghost"> ghost </option>
+            <option value="grass"> grass </option>
+            <option value="ground"> ground</option>
+			<option value="ice"> ice </option>
+			<option value="normal"> normal </option>
+			<option value="poison"> poison</option>
+			<option value="rock"> rock </option>
+			<option value="steel"> steel</option>
+			<option value="water"> water </option>
+			   </select>
+			 </div>
+	  </header>
+
+	
+	
+	  <div id="tarjetas" class="grid-container">
+
+</div>
+
+	<script src="main.js" type="module"></script>
+
+
   </body>
 </html>
